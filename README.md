@@ -1,5 +1,6 @@
 # abg
 this stands for _**a**scii-**b**ased **g**raphics format._ this is an ideal file format for terminal-based graphics.
+
 ## example
 here's abg in action:
 ```
@@ -29,6 +30,25 @@ xx w1 w1 xx w1 w1 xx xx
 becomes
 
 ![image](https://github.com/qwertyy-dev/abg/assets/129226914/ca8a21e5-35dd-4817-bd69-9a05d065f2da)
+
 ## limitations
 yes, there are limitations. only **20** different colors are supported (three shades of red, yellow, green, blue, purple, white, along with black and a transparent option)
 however, this is still an optimal option for terminal-based graphics.
+
+## how to make a `.abg` file
+the first line of a `.abg` file contains the version of abg this file uses. this is because abg is subject to change in the future. the second line does nothing. you can do whatever you want with it. from that point forward, it starts reading for pixels. here is how a pixel is transformed:
+- the first letter is the color.
+  - `r` = red
+  - `y` = yellow
+  - `g` = green
+  - `b` = blue
+  - `v` = cyan
+  - `p` = purple
+  - `w` = white
+  - `x` = transparent
+- the second letter is the brightness.
+  - `1` = black
+  - `2` = very dark
+  - `3` = little darker
+  - `4` = bright
+  - `x` = transparent
