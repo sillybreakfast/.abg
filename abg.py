@@ -1,7 +1,7 @@
 # acsii-based graphics format
 # version 1.0.1
 
-file = open(input("open a file... "), "r")
+file = open(input("open a file... "), "r").read()
 
 class abg:
 	def interpret(file):
