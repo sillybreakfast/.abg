@@ -4,7 +4,6 @@ this stands for _**a**scii-**b**ased **g**raphics format._ this is an ideal file
 ## example
 here's abg in action:
 ```
-1.0.1
 a person waving hello
 xx xx xx xx xx xx xx xx
 xx xx y4 y4 y4 xx xx xx
@@ -36,13 +35,13 @@ yes, there are limitations. only **20** different colors are supported (three sh
 however, this is still an optimal option for terminal-based graphics.
 
 ## how to make a `.abg` file
-the first line of a `.abg` file contains the version of abg this file uses. this is because abg is subject to change in the future. the second line does nothing. you can do whatever you want with it. from that point forward, it starts reading for pixels. here is how a pixel is transformed:
+the first line does nothing. you can do whatever you want with it. from that point forward, it starts reading for pixels. here is how a pixel is transformed:
 - the first letter is the color.
   - `r` = red
   - `y` = yellow
   - `g` = green
   - `b` = blue
-  - `v` = cyan
+  - `c` = cyan
   - `p` = purple
   - `w` = white
   - `x` = transparent
